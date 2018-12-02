@@ -7,18 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="css/styleForObjects.css"> -->
-
+    <link rel="stylesheet" href="css/master.css">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous"> --> -->
     <!-- <link rel="stylesheet" href="css/rel.css"> -->
 
+
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/master.css">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
 
         </div>
         <script id="post-template" type="text/x-handlebars-template">
-            <a class="btn js-click-modal">
+            <a href="/object-one.html?id={{id}}">
                 <div id="id_modal" data-id-modal style="display: none">{{id}}</div>
                 <div class = "object">
                   <div class="object__description">
@@ -64,11 +64,12 @@
         </script>
     </div>
     <!-- MODAL -->
-    <div id="container-mod">
+    <!-- <div id="container-mod">
         <div class="modal">
             <div class="header-mod">
 
             </div>
+            <input type="button" id="btn_stage" value="Этапы строительства"/>
             <div class="stages">
                 <ul class="stages_ul">
                     
@@ -81,6 +82,8 @@
     </div>
     <script id="post-template1" type="text/x-handlebars-template">
         <div class="infa">
+                <h3>Информация об объекте:</h3>
+                <p>Наименование объекта: {{name}}</p>
                 <p>Срок начала строительства:   {{ data_start}}</p>
                 <p>Срок сдачи объекта:   {{ data_end}}</p>
                 <p>Прогресс:   </p>
@@ -90,9 +93,9 @@
               <div class="img" style="background-image: url({{image}});background-size: cover;">
                 </div>
                 
-        </script>
+        </script> -->
     <!-- FOOTER -->
-    <div class="footer">
+    <footer>
         <section class="topFooter">
             <div class="contacts">
                 <h4><a href="">+7 495 755-47-40</a></h4>
@@ -204,7 +207,7 @@
             <p>Все права защищены</p>
             <p><a href="#">Сайт ДОМ.РФ</a></p>
         </section>
-    </div>
+    </footer>
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
     <script src="js/getObject.js"></script>
