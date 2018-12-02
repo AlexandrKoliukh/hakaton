@@ -1,0 +1,30 @@
+<div id="container-mod">
+        <div class="modal">
+            <div class="header-mod">
+
+            </div>
+            <input type="button" id="btn_stage" value="Этапы строительства"/>
+            <div class="stages">
+                <ul class="stages_ul">
+                    
+                </ul>
+            </div>
+            <div class="body-mod">
+                <a class="btn-close js-close-modal">Close</a>
+            </div>
+        </div>
+    </div>
+    <script id="post-template1" type="text/x-handlebars-template">
+        <div class="infa">
+                <h3>Информация об объекте:</h3>
+                <p>Наименование объекта: {{name}}</p>
+                <p>Срок начала строительства:   {{ data_start}}</p>
+                <p>Срок сдачи объекта:   {{ data_end}}</p>
+                <p>Прогресс:   </p>
+                <p>Застройщик:   </p>
+                <p>Рейтинг:   </p>
+              </div>
+              <div class="img" style="background-image: url({{image}});background-size: cover;">
+                </div>
+                
+        </script>
