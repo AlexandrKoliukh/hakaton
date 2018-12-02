@@ -126,7 +126,7 @@ html{
 }
 
 .object{
-    margin: auto;
+  margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     color: #fff;
@@ -136,6 +136,7 @@ html{
     background-color: #001726;
     width: 394px;
     height: 429px;
+
 }
 .object img{
   width: 370px;
@@ -149,7 +150,7 @@ html{
 
 /*Футер*/
 
-.footer{
+footer{
 	height: 40vh;
 	display: flex;
 	flex-direction: column;
@@ -159,7 +160,7 @@ html{
   width: 100%;
 }
 
-.footer a{
+footer a{
 	text-decoration: none;
 	color:white;
 }
@@ -234,9 +235,6 @@ html{
 	opacity: 0.4;
 }
 
-a:hover{
-  text-decoration: none;
-}
 
 .social svg:hover{
 	opacity: 1;
